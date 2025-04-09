@@ -1,0 +1,12 @@
+17:53:47.038 INFO  AUTOMATION - Suite iniciada: Default Suite
+17:53:47.107 DEBUG AUTOMATION - Iniciando driver
+17:53:57.781 DEBUG AUTOMATION - Iniciando el driver al driver provider
+17:53:57.841 INFO  AUTOMATION - Esperando que la pagina cargue
+17:53:59.640 INFO  AUTOMATION - a cargado correctamente
+17:53:59.643 INFO  AUTOMATION - Comenzando el test: validCredentialsTest
+17:53:59.715 INFO  AUTOMATION - Escriendo el username
+17:54:00.300 INFO  AUTOMATION - Escriendo el password
+17:54:01.858 INFO  AUTOMATION - Haciendo click en el boton de login
+17:54:02.451 INFO  AUTOMATION - Test exitoso: validCredentialsTest
+17:54:02.453 DEBUG AUTOMATION - Finalizando driver
+17:54:03.163 INFO  AUTOMATION - Suite finalizada: Default Suite
