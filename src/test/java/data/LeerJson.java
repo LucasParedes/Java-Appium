@@ -1,20 +1,20 @@
 package data;
 
 import io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper;
-import models.CredentialsJson;
+import models.CredencialesJson;
 import utilities.Logs;
 
 import java.io.File;
 import java.io.IOException;
 
-public class JsonReader {
-    private static final String credentialPath = "src/test/resources/data/credentials.json";
+public class LeerJson {
+    private static final String credentialPath = "src/test/resources/data/credenciales.json";
 
-    public static CredentialsJson getCredentialMap() {
+    public static CredencialesJson tomarCredenciales() {
         final var objectMapper = new ObjectMapper();
 
         try {
-            return objectMapper.readValue(new File(credentialPath), CredentialsJson.class);
+            return objectMapper.readValue(new File(credentialPath), CredencialesJson.class);
         } catch (IOException ioException) {
             Logs.info("Error al leer el JSON", ioException.getLocalizedMessage());
             throw new RuntimeException(ioException.getLocalizedMessage());

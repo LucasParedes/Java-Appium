@@ -1,0 +1,19 @@
+{
+  "credenciales": {
+    "validas": {
+      "usuario": "standard_user",
+      "contrasenia": "secret_sauce",
+      "mensaje": ""
+    },
+    "bloqueadas": {
+      "usuario": "locked_out_user",
+      "contrasenia": "secret_sauce",
+      "mensaje": "Sorry, this user has been locked out."
+    },
+    "invalidas": {
+      "usuario": "hello_world",
+      "contrasenia": "password",
+      "mensaje": "Username and password do not match any user in this service."
+    }
+  }
+}

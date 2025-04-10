@@ -4,11 +4,11 @@ import pages.LoginPage;
 
 public class CommonFlows {
     public void goToLoginPage() {
-        new LoginPage().waitPageToLoad();
+        new LoginPage().esperarCargaPagina();
     }
 
     public void goToShoppingPage() {
-        new LoginPage().fillData("locked_out_user", "secret_sauce");
+        new LoginPage().insertarCredencialesInicio("locked_out_user", "secret_sauce");
     }
 
     public void openBurgerMenu() {

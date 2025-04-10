@@ -1,9 +1,32 @@
-17:53:47.038 INFO  AUTOMATION - Suite iniciada: Default Suite
-17:53:57.841 INFO  AUTOMATION - Esperando que la pagina cargue
-17:53:59.640 INFO  AUTOMATION - a cargado correctamente
-17:53:59.643 INFO  AUTOMATION - Comenzando el test: validCredentialsTest
-17:53:59.715 INFO  AUTOMATION - Escriendo el username
-17:54:00.300 INFO  AUTOMATION - Escriendo el password
-17:54:01.858 INFO  AUTOMATION - Haciendo click en el boton de login
-17:54:02.451 INFO  AUTOMATION - Test exitoso: validCredentialsTest
-17:54:03.163 INFO  AUTOMATION - Suite finalizada: Default Suite
+22:49:53.888 INFO  AUTOMATION - Suite iniciada: Default Suite
+22:50:03.821 INFO  AUTOMATION - Esperando que la pagina cargue
+22:50:05.564 INFO  AUTOMATION - a cargado correctamente
+22:50:05.567 INFO  AUTOMATION - Comenzando el test: testCredencialesErroneas
+22:50:05.603 INFO  AUTOMATION - Escriendo el username
+22:50:06.184 INFO  AUTOMATION - Escriendo el password
+22:50:07.229 INFO  AUTOMATION - Haciendo click en el boton de login
+22:50:07.808 INFO  AUTOMATION - Esperando que el mensaje de error aparezca
+22:50:08.539 INFO  AUTOMATION - Verificando el mensaje de error
+22:50:08.636 INFO  AUTOMATION - Test exitoso: testCredencialesErroneas
+22:50:17.207 INFO  AUTOMATION - Esperando que la pagina cargue
+22:50:18.970 INFO  AUTOMATION - a cargado correctamente
+22:50:18.972 INFO  AUTOMATION - Comenzando el test: testCredencialesErroneas
+22:50:18.974 INFO  AUTOMATION - Escriendo el username
+22:50:19.551 INFO  AUTOMATION - Escriendo el password
+22:50:20.617 INFO  AUTOMATION - Haciendo click en el boton de login
+22:50:21.189 INFO  AUTOMATION - Esperando que el mensaje de error aparezca
+22:50:21.882 INFO  AUTOMATION - Verificando el mensaje de error
+22:50:22.513 INFO  AUTOMATION - Test fallido: testCredencialesErroneas
+22:50:31.737 INFO  AUTOMATION - Esperando que la pagina cargue
+22:50:33.522 INFO  AUTOMATION - a cargado correctamente
+22:50:33.523 INFO  AUTOMATION - Comenzando el test: testCredencialesValidas
+22:50:33.528 INFO  AUTOMATION - Escriendo el username
+22:50:33.602 INFO  AUTOMATION - Escriendo el password
+22:50:34.164 INFO  AUTOMATION - Haciendo click en el boton de login
+22:50:34.760 INFO  AUTOMATION - Test exitoso: testCredencialesValidas
+22:50:43.395 INFO  AUTOMATION - Esperando que la pagina cargue
+22:50:45.185 INFO  AUTOMATION - a cargado correctamente
+22:50:45.186 INFO  AUTOMATION - Comenzando el test: testValidandoCredenciasDefaultPagina
+22:50:45.189 INFO  AUTOMATION - Verificando credenciales escritas default
+22:50:47.397 INFO  AUTOMATION - Test exitoso: testValidandoCredenciasDefaultPagina
+22:50:48.396 INFO  AUTOMATION - Suite finalizada: Default Suite

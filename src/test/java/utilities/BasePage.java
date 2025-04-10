@@ -59,7 +59,7 @@ public abstract class BasePage {
         getDriver().pressKey(new KeyEvent(AndroidKey.BACK));
     }
 
-    protected void sleedp(int timeMS) {
+    protected void sleep(int timeMS) {
         try {
             Thread.sleep(timeMS);
         } catch (InterruptedException interruptedException) {
@@ -67,7 +67,7 @@ public abstract class BasePage {
         }
     }
 
-    public abstract void waitPageToLoad(); // esperar que cargue la pagina
+    public abstract void esperarCargaPagina(); // esperar que cargue la pagina
 
-    public abstract void verifyPage(); // verifica la ui de la pagina
+    public abstract void verificarPagina(); // verifica la ui de la pagina
 }
