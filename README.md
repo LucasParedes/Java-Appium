@@ -1,7 +1,7 @@
 # Java + Appium - Android
 
 Estoy llevando a cabo este proyecto como parte de mi aprendizaje en la automatización de pruebas móviles. Mi objetivo es
-fortalecer mis conocimientos en herramientas como Appium y WebDriverIO, que son fundamentales para la automatización en
+fortalecer mis conocimientos en JAVA y Appium, que son fundamentales para la automatización en
 dispositivos Android.
 A través de este proyecto, aprendo la configuración del entorno, la ejecución de pruebas en emuladores y dispositivos
 físicos, así como la implementación de buenas prácticas en la automatización móvil.
@@ -38,18 +38,19 @@ Para este proyecto, use la siguiente configuración:
 
 | Server Key  | Server Value |
 |-------------|--------------|
-| Remote Host | 0.0.0.0      |
+| Remote Host | 127.0.0.1    |
 | Remote Port | 4723         |
 | Remote Path | /            |
 
 Capacidades deseadas de Android (ejemplo)
-| Key | Value |
-| ------------- | ------------- |
-| platformName | Android |
-| platformVersion | [OS VERSION / IMAGE] |
-| deviceName | [EMULATED_DEVICE_NAME] |
-| app | /[PROJECT_PATH]/[APP_NAME].apk |
-| appium:automationName | UIAutomator2 |
+
+| Key                   | Value                    |
+|-----------------------|--------------------------|
+| platformName          | Android                  |
+| platformVersion       | [SO VERSION]             |
+| deviceName            | [NOMBRE_DEL_DISPOSITIVO] |
+| app                   | /[RUTA]/[APP_NAME].apk   |
+| appium:automationName | UIAutomator2             |
 
 ## Instalar Appium
 
@@ -91,7 +92,6 @@ appium-doctor
 Para que Appium funcione correctamente, necesitas los drivers de Android en tu sistema:
 
 ```bash
-appium driver install xcuitest
 appium driver install uiautomator2
 ```
 
@@ -103,79 +103,7 @@ appium driver list
 
 #### Aplicaciones de prueba
 
-Aplicaciones de prueba que puedes utilizar:
-
-[SauceDemo Hybrid App - React Native)](https://github.com/saucelabs/my-demo-app-rn)
+Aplicaciones de prueba que se utilizara:
 
 [Sauce Labs Native Sample Application](https://github.com/saucelabs/sample-app-mobile)
 
-## Configurar WebDriverIO
-
-1- Ejecutar el comando para crear el package.json y seguir el proceso de configuración en WebDriverIO:
-
-```bash
-    npm init wdio .
-```
-
-2- Utilizando el Asistente de Configuración de WDIO, selecciona las opciones que prefieras. En mi caso, elegí:
-
-- On my local machine
-- Mocha
-- No compiler
-- Spect Location: Default
-- Do you want WebDriverIO to generate some test files?: No
-- Reporter: Spec
-- No Plugin
-- Service: Appium
-- Base URL: Default
-- NPM Install: Yes
-
-3- Agrega tus pruebas en la siguiente ruta:
-
-```bash
-'./[yourProject]/specs/**/*.js'
-```
-
-4- Configura la ruta de la aplicación en wdio.conf.js
-
-- Declara la ubicación de la aplicación:
-
-```bash
-const projectPath = require('path')
-const androidAppPath = projectPath.join(process.cwd(), "app/android/Android-MyDemoAppRN.1.3.0.build-244.apk")
-```
-
-- Configura las capacidades para Android (Ejemplo con emulador):
-
-```bash
-capabilities: [{
-        platformName: 'Android',
-        "appium:device-name": 'Pixel 4 API 30',
-        "appium:platformVersion": "11",
-        "appium:automationName": "UIAutomator2",
-        "appium:app": androidAppPath,
-    }]
-```
-
-- Instala Appium en tu proyecto:
-
-```bash
-    npm install --save-dev appium@next
-```
-
-- Verifica si los controladores aún están disponibles, si no, instálalos nuevamente:
-
-```bash
-appium driver list
-```
-
-```bash
-appium driver install xcuitest
-appium driver install uiautomator2
-```
-
-- Ejecuta tus scripts usando:
-
-```bash
-npx wdio
-```
