@@ -7,14 +7,17 @@ import utilities.Logs;
 import java.io.File;
 import java.io.IOException;
 
-public class LeerJson {
-    private static final String credentialPath = "src/test/resources/data/credenciales.json";
+public class DataReader {
+    private static final String credentialPath = "src/test/resources/data/credencialesClientes.json";
+    private static CredencialesJson cache;
 
     public static CredencialesJson tomarCredenciales() {
-        final var objectMapper = new ObjectMapper();
+        if (cache != null) return cache;
 
+        ObjectMapper objectMapper = new ObjectMapper();
         try {
-            return objectMapper.readValue(new File(credentialPath), CredencialesJson.class);
+            cache = objectMapper.readValue(new File(credentialPath), CredencialesJson.class);
+            return cache;
         } catch (IOException ioException) {
             Logs.info("Error al leer el JSON", ioException.getLocalizedMessage());
             throw new RuntimeException(ioException.getLocalizedMessage());

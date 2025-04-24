@@ -1,5 +1,7 @@
 package utilities;
 
+import config.DriverProvider;
+
 public class Deeplinks {
     private static final String completeCheckout = "swaglabs://complete";
     private static final String itemDetail = "swaglabs://swag-item/%d";

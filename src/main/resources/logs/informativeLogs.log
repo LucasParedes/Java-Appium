@@ -1,32 +1,32 @@
-22:49:53.888 INFO  AUTOMATION - Suite iniciada: Default Suite
-22:50:03.821 INFO  AUTOMATION - Esperando que la pagina cargue
-22:50:05.564 INFO  AUTOMATION - a cargado correctamente
-22:50:05.567 INFO  AUTOMATION - Comenzando el test: testCredencialesErroneas
-22:50:05.603 INFO  AUTOMATION - Escriendo el username
-22:50:06.184 INFO  AUTOMATION - Escriendo el password
-22:50:07.229 INFO  AUTOMATION - Haciendo click en el boton de login
-22:50:07.808 INFO  AUTOMATION - Esperando que el mensaje de error aparezca
-22:50:08.539 INFO  AUTOMATION - Verificando el mensaje de error
-22:50:08.636 INFO  AUTOMATION - Test exitoso: testCredencialesErroneas
-22:50:17.207 INFO  AUTOMATION - Esperando que la pagina cargue
-22:50:18.970 INFO  AUTOMATION - a cargado correctamente
-22:50:18.972 INFO  AUTOMATION - Comenzando el test: testCredencialesErroneas
-22:50:18.974 INFO  AUTOMATION - Escriendo el username
-22:50:19.551 INFO  AUTOMATION - Escriendo el password
-22:50:20.617 INFO  AUTOMATION - Haciendo click en el boton de login
-22:50:21.189 INFO  AUTOMATION - Esperando que el mensaje de error aparezca
-22:50:21.882 INFO  AUTOMATION - Verificando el mensaje de error
-22:50:22.513 INFO  AUTOMATION - Test fallido: testCredencialesErroneas
-22:50:31.737 INFO  AUTOMATION - Esperando que la pagina cargue
-22:50:33.522 INFO  AUTOMATION - a cargado correctamente
-22:50:33.523 INFO  AUTOMATION - Comenzando el test: testCredencialesValidas
-22:50:33.528 INFO  AUTOMATION - Escriendo el username
-22:50:33.602 INFO  AUTOMATION - Escriendo el password
-22:50:34.164 INFO  AUTOMATION - Haciendo click en el boton de login
-22:50:34.760 INFO  AUTOMATION - Test exitoso: testCredencialesValidas
-22:50:43.395 INFO  AUTOMATION - Esperando que la pagina cargue
-22:50:45.185 INFO  AUTOMATION - a cargado correctamente
-22:50:45.186 INFO  AUTOMATION - Comenzando el test: testValidandoCredenciasDefaultPagina
-22:50:45.189 INFO  AUTOMATION - Verificando credenciales escritas default
-22:50:47.397 INFO  AUTOMATION - Test exitoso: testValidandoCredenciasDefaultPagina
-22:50:48.396 INFO  AUTOMATION - Suite finalizada: Default Suite
+00:21:53.018 INFO  AUTOMATION - Suite iniciada: Surefire suite
+00:22:07.318 INFO  AUTOMATION - Esperando que la pagina cargue
+00:22:08.793 INFO  AUTOMATION - a cargado correctamente
+00:22:08.796 INFO  AUTOMATION - Comenzando el test: testCredencialesErroneas
+00:22:08.835 INFO  AUTOMATION - Escriendo el username
+00:22:09.401 INFO  AUTOMATION - Escriendo el password
+00:22:10.483 INFO  AUTOMATION - Haciendo click en el boton de login
+00:22:11.040 INFO  AUTOMATION - Esperando que el mensaje de error aparezca
+00:22:11.757 INFO  AUTOMATION - Verificando el mensaje de error
+00:22:11.858 INFO  AUTOMATION - Test exitoso: testCredencialesErroneas
+00:22:22.703 INFO  AUTOMATION - Esperando que la pagina cargue
+00:22:24.623 INFO  AUTOMATION - a cargado correctamente
+00:22:24.630 INFO  AUTOMATION - Comenzando el test: testCredencialesErroneas
+00:22:24.634 INFO  AUTOMATION - Escriendo el username
+00:22:25.207 INFO  AUTOMATION - Escriendo el password
+00:22:25.887 INFO  AUTOMATION - Haciendo click en el boton de login
+00:22:26.440 INFO  AUTOMATION - Esperando que el mensaje de error aparezca
+00:22:27.141 INFO  AUTOMATION - Verificando el mensaje de error
+00:22:27.218 INFO  AUTOMATION - Test exitoso: testCredencialesErroneas
+00:22:36.517 INFO  AUTOMATION - Esperando que la pagina cargue
+00:22:38.468 INFO  AUTOMATION - a cargado correctamente
+00:22:38.474 INFO  AUTOMATION - Comenzando el test: testCredencialesValidas
+00:22:38.479 INFO  AUTOMATION - Escriendo el username
+00:22:39.056 INFO  AUTOMATION - Escriendo el password
+00:22:40.090 INFO  AUTOMATION - Haciendo click en el boton de login
+00:22:40.660 INFO  AUTOMATION - Test exitoso: testCredencialesValidas
+00:22:48.860 INFO  AUTOMATION - Esperando que la pagina cargue
+00:22:50.761 INFO  AUTOMATION - a cargado correctamente
+00:22:50.763 INFO  AUTOMATION - Comenzando el test: testValidandoCredenciasDefaultPagina
+00:22:50.766 INFO  AUTOMATION - Verificando credenciales escritas default
+00:22:53.339 INFO  AUTOMATION - Test exitoso: testValidandoCredenciasDefaultPagina
+00:22:54.060 INFO  AUTOMATION - Suite finalizada: Surefire suite

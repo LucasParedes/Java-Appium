@@ -20,6 +20,8 @@ public class TestListeners implements ITestListener {
     public void onTestFailure(ITestResult result) {
         Logs.info("Test fallido: %s", result.getName());
         FileManager.tomarCaptura(result.getName());
+        // Esto es lo que hace que Allure adjunte la screenshot:
+        FileManager.adjuntarCapturaAllure();
     }
 
     @Override

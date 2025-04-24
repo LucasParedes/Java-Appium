@@ -1,9 +1,9 @@
 package pages;
 
+import base.BasePage;
 import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import utilities.BasePage;
 import utilities.Gestures;
 import utilities.Logs;
 

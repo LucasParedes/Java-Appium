@@ -1,5 +1,6 @@
 package utilities;
 
+import config.DriverProvider;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -35,7 +36,16 @@ public class FileManager {
     }
 
     @Attachment(value = "screenshot", type = "image/png")
-    public static byte[] tomarCaptura() {
-        return ((TakesScreenshot) new DriverProvider().get()).getScreenshotAs(OutputType.BYTES);
+    public static byte[] adjuntarCapturaAllure() {
+        Logs.debug("Tomando captura ALLURE ERROR");
+        byte[] screenshot = ((TakesScreenshot) new DriverProvider().get()).getScreenshotAs(OutputType.BYTES);
+
+        if (screenshot.length == 0) {
+            Logs.debug("La captura de pantalla está vacía.");
+        } else {
+            Logs.debug("Captura de pantalla tomada con éxito. Tamaño: " + screenshot.length + " bytes.");
+        }
+
+        return screenshot;
     }
 }

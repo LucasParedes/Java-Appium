@@ -1,11 +1,11 @@
 package test;
 
-import data.Datas;
-import data.RecorrerDataProvideres;
+import base.BaseTest;
+import data.Credenciales;
+import data.DataProvideres;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.LoginPage;
-import utilities.BaseTest;
 
 public class LoginTests extends BaseTest {
     private final LoginPage loginPage = new LoginPage();
@@ -15,19 +15,19 @@ public class LoginTests extends BaseTest {
         commonFlows.goToLoginPage();
     }
 
-    @Test(groups = {regression, smoke})
+    @Test(groups = regresion)
     public void testCredencialesValidas() {
-        final var validCredentials = Datas.credencialesValidas();
+        final var validCredentials = Credenciales.credencialesValidas();
         loginPage.insertarCredencialesInicio(validCredentials.usuario(), validCredentials.contrasenia());
     }
 
-    @Test(groups = {regression, smoke}, dataProviderClass = RecorrerDataProvideres.class, dataProvider = RecorrerDataProvideres.DP_CREDENCIALES)
+    @Test(groups = regresion, dataProviderClass = DataProvideres.class, dataProvider = DataProvideres.DP_CREDENCIALES)
     public void testCredencialesErroneas(String usuario, String contrasenia, String message) {
         loginPage.insertarCredencialesInicio(usuario, contrasenia);
         loginPage.validarMensajeError(message);
     }
 
-    @Test(groups = {regression, smoke})
+    @Test(groups = regresion)
     public void testValidandoCredenciasDefaultPagina() {
         loginPage.verificarCredencialesPagina();
     }

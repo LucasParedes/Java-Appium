@@ -1,7 +1,9 @@
-package utilities;
+package base;
 
+import config.DriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import utilities.Logs;
 
 import java.io.File;
 import java.net.MalformedURLException;

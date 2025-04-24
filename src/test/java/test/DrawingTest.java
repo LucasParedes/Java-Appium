@@ -1,8 +1,8 @@
 package test;
 
+import base.BaseTest;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
-import utilities.BaseTest;
 
 public class DrawingTest extends BaseTest {
     private WebElement canvasElement;

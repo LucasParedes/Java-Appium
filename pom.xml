@@ -13,6 +13,7 @@
         <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <exec.mainClass>org.example.Main</exec.mainClass>
+        <aspectj.version>1.9.7</aspectj.version>
     </properties>
 
     <dependencies>
